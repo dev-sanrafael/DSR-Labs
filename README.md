@@ -32,14 +32,37 @@ desde la arquitectura hasta la ejecución en producción.
 
 ---
 
-## 🗂️ Estructura del repositorio
+## 🗂️ Estructura del proyecto
 
-- **DSR-LABS/**
+- DSR-LABS/
   - [`FUNDACION.md`](FUNDACION.md) — Texto fundacional (ancla ideológica)
   - [`ESTRATEGIA.md`](ESTRATEGIA.md) — Misión, visión y valores
   - [`ROADMAP.md`](ROADMAP.md) — Plan de construcción por fases y días
-  - **PUBLIC/** — Posts, manifiestos, updates públicos
-  - **SYSTEMS/** — Arquitecturas, código y documentación técnica
+
+  - PUBLIC/ — Posts, manifiestos, updates públicos
+    - posts/ — Actualizaciones y artículos
+    - manifiestos/ — Declaraciones de principios
+    - updates/ — Progreso semanal
+
+  - SYSTEMS/ — Arquitecturas, código y documentación técnica
+    - architecture/ — Diseños de arquitectura
+    - orchestrators/ — Código de orquestadores
+    - infrastructure/ — Configs de infraestructura
+    - docs/ — Documentación técnica
+
+  - BRAND/ — Identidad visual
+    - logo/ — Variantes del logo
+    - colors/ — Paleta y guías de uso
+    - guidelines/ — Manual de marca básico
+
+  - RESEARCH/ — Investigación y experimentos
+    - papers/ — Papers relevantes
+    - experiments/ — Pruebas de concepto
+    - notes/ — Notas de investigación
+
+  - TOOLS/ — Herramientas internas
+    - scripts/ — Scripts de automatización
+    - templates/ — Templates reutilizables
 
 ---
 
