@@ -39,12 +39,12 @@ desde la arquitectura hasta la ejecución en producción.
   - [`ESTRATEGIA.md`](ESTRATEGIA.md) — Misión, visión y valores
   - [`ROADMAP.md`](ROADMAP.md) — Plan de construcción por fases y días
 
-  - PUBLIC/ — Posts, manifiestos, updates públicos
+  - [`PUBLIC/`](PUBLIC/) — Posts, manifiestos, updates públicos
     - posts/ — Actualizaciones y artículos
     - manifiestos/ — Declaraciones de principios
     - updates/ — Progreso semanal
 
-  - SYSTEMS/ — Arquitecturas, código y documentación técnica
+  - [`SYSTEMS//`](SYSTEMS/) — Arquitecturas, código y documentación técnica
     - architecture/ — Diseños de arquitectura
     - orchestrators/ — Código de orquestadores
     - infrastructure/ — Configs de infraestructura
