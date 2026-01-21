@@ -23,7 +23,7 @@ Una respuesta.
 El flujo completo del sistema puede verse en el siguiente diagrama:
 
 👉 **Diagrama Arquitectura v0.1**  
-https://drive.google.com/file/d/1_-eIzoDZIRjKciZo7-duoCQqwQa4NOFz/view?usp=sharing
+[`Diagrama de Arquitectura v0.1`](https://drive.google.com/file/d/1_-eIzoDZIRjKciZo7-duoCQqwQa4NOFz/view?usp=sharing)
 
 Este diagrama representa el estado real del sistema hoy, no una proyección futura.
 
