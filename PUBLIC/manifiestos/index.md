@@ -5,10 +5,9 @@ title: Manifiestos DSR Labs
 
 # Manifiestos DSR Labs
 
-{% for file in site.static_files %}
-  {% if file.path contains "/PUBLIC/manifiestos/"
-        and file.extname == ".md"
-        and file.name != "index.md" %}
-- [{{ file.name | replace: "_", " " | replace: ".md", "" }}]({{ file.name }})
+{% for page in site.pages %}
+  {% if page.path contains "PUBLIC/manifiestos/"
+        and page.name != "index.md" %}
+- [{{ page.title | default: page.name | replace: "_", " " }}]({{ page.url }})
   {% endif %}
 {% endfor %}
