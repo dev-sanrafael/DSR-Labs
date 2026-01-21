@@ -1,6 +1,6 @@
 ---
 title: Arquitectura v0.1
-permalink: /SYSTEMS/arquitectura/ARQUITECTURA_V0_1/
+permalink: /SYSTEMS/arquitectura/ARQUITECTURA_V0_1
 ---
 
 # Arquitectura v0.1 — Cómo funciona DSR Labs hoy

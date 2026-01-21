@@ -1,6 +1,6 @@
 ---
 title: Stack v0
-permalink: /SYSTEMS/arquitectura/STACK_V0/
+permalink: /SYSTEMS/arquitectura/STACK_V0
 ---
 Stack v0 de DSR Labs
 

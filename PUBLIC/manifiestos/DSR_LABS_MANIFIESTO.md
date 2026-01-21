@@ -1,6 +1,6 @@
 ---
 title: Manifiesto DSR Labs
-permalink: /PUBLIC/manifiestos/DSR_LABS_MANIFIESTO/
+permalink: /DSR-Labs/PUBLIC/manifiestos/DSR_LABS_MANIFIESTO
 ---
 
 ### Manifiesto DSR Labs
