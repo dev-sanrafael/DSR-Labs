@@ -1,0 +1,17 @@
+# Roadmap JSONs (Requested by user)
+dsr-labs-75-dias.json
+dsr-labs-76-131-dias.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

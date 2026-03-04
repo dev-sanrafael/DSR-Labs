@@ -42,12 +42,12 @@ desde la arquitectura hasta la ejecución en producción.
   - [`PUBLIC/`](PUBLIC/) — Posts, manifiestos, updates públicos
     - posts/ — Actualizaciones y artículos
     - manifiestos/ — Declaraciones de principios
-    - updates/ — Progreso semanal
+    - actualizaciones/ — Progreso semanal
 
   - [`SYSTEMS/`](SYSTEMS/) — Arquitecturas, código y documentación técnica
-    - architecture/ — Diseños de arquitectura
-    - orchestrators/ — Código de orquestadores
-    - infrastructure/ — Configs de infraestructura
+    - arquitectura/ — Diseños de arquitectura
+    - orquestadores/ — Código de orquestadores
+    - infraestructura/ — Configs de infraestructura
     - docs/ — Documentación técnica
 
   - BRAND/ — Identidad visual
@@ -95,9 +95,9 @@ La transparencia es parte del sistema.
 
 ## 📌 Estado del proyecto
 
-🟦 **Fase actual:** Fundación  
+🟦 **Fase actual:** Diseño Profundo (Día 30)  
 🗓️ **Inicio:** Enero 2026  
-📍 **Enfoque:** Arquitectura de IA, orquestadores, infraestructura
+📍 **Enfoque:** Orquestación asíncrona, benchmarking de modelos, cluster Proxmox.
 
 ---
 
