@@ -18,4 +18,10 @@ Es vital medir la experiencia "Low-Cost":
 - Mistral v0.3
 - Qwen 2.5 (especial para código)
 
-Cada benchmark se ejecutará en una VM limpia de Proxmox para garantizar la reproducibilidad de los datos.
+## Metodología de Pruebas
+
+Para garantizar la integridad de los resultados en esta fase temprana (Notebook Stage):
+
+1. **Aislamiento Local**: Se cerrarán todas las aplicaciones no esenciales y se reiniciará el servicio de inferencia antes de cada prueba.
+2. **Nodos de la Comunidad**: Invitamos a quienes tengan acceso a servidores Proxmox o hardware dedicado a ejecutar estos planes y compartir sus logs. **Buscamos donaciones de tiempo de cómputo para validar estos modelos en alta disponibilidad.**
+3. **Versiones**: Se testearán cuantizaciones Q4, Q8 y FP16 para comparar pérdida de precisión vs velocidad.

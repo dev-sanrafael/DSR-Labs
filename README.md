@@ -97,7 +97,8 @@ La transparencia es parte del sistema.
 
 🟦 **Fase actual:** Diseño Profundo (Día 30)  
 🗓️ **Inicio:** Enero 2026  
-📍 **Enfoque:** Orquestación asíncrona, benchmarking de modelos, cluster Proxmox.
+📍 **Enfoque:** Orquestación asíncrona, benchmarking de modelos.  
+⚙️ **Hardware Actual:** Notebook (Local) + Buscando Nodos de Comunidad.
 
 ---
 
@@ -121,6 +122,19 @@ Es un laboratorio activo.
 Si buscás resultados rápidos sin entender el sistema, este proyecto no es para vos.
 
 Si querés entender cómo se construye IA en serio, bienvenido.
+
+---
+
+## 🤝 Colaboración y Donaciones
+
+DSR Labs es un proyecto de código abierto construido "a puro pulmón". Actualmente, el desarrollo se realiza en hardware personal (**notebooks**) y no contamos con presupuesto para servidores dedicados.
+
+### ¿Cómo puedes ayudar?
+1. **Donación de Cómputo**: Si tienes un servidor (Proxmox, Linux, etc.) con GPU excedente y quieres ponerlo a disposición del laboratorio para pruebas de orquestación, contáctanos.
+2. **Feedback y Pruebas**: Ejecuta nuestro [Verificador de Hardware (Windows)](SYSTEMS/infraestructura/check_gpu.bat) y comparte tus resultados. Esto nos ayuda a entender cómo rinde la IA en distintos "fierros".
+3. **Código**: Revisa nuestra [Arquitectura v0.2](SYSTEMS/arquitectura/ARQUITECTURA_V0_2.md) y propón mejoras.
+
+**Soberanía tecnológica, un nodo a la vez.**
 
 ---
 

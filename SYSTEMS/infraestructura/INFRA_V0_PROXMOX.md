@@ -1,22 +1,23 @@
-# Infraestructura v0 — Cluster Proxmox
+# Infraestructura v0 — Entorno de Desarrollo y Visión
 
-Nuestro entorno de laboratorio corre sobre **Proxmox VE 8.x**.
+DSR Labs nace como un laboratorio de recursos limitados pero ambición técnica alta. No esperamos a tener el hardware ideal para empezar a construir; construimos con lo que tenemos y diseñamos para lo que vendrá.
 
-## Especificaciones del Nodo 1 (Minimo):
-- **CPU**: 8 Cores / 16 Threads (mínimo para orquestación).
-- **RAM**: 64GB DDR4 (para cargar modelos medianos de 14B - 32B).
-- **GPU**: NVIDIA RTX 3060 12GB o superior (con `PCIe Passthrough`).
-- **Storage**: NVMe para acceso rápido a los pesos del modelo.
+## Realidad Actual: Desarrollo en Notebook
+Hoy, el núcleo de DSR Labs se ejecuta localmente en hardware personal.
+- **Entorno**: Windows 11 / WSL2 / Linux (según disponibilidad del desarrollador).
+- **Ejecución**: Modelos cuantizados (GGUF/EXL2) para maximizar el uso de RAM y iGPUs.
 
-## Configuración Low-Cost (CPU-Only):
-DSR Labs es inclusivo. Si no tienes GPU, el sistema **seguirá funcionando** gracias a que Ollama y vLLM soportan ejecución en CPU (usando AVX2/AVX512).
+## Visión de Escala: Cluster Proxmox
+Nuestra meta a largo plazo es migrar a un entorno controlado de **Proxmox VE 8.x**.
 
-- **Requisito RAM**: Necesitarás al menos 16GB de RAM para modelos de 7B-8B, ya que el modelo se cargará enteramente en la memoria del sistema.
-- **Limitación**: La velocidad (Tokens por segundo) será significativamente menor (1-3 t/s vs 40-60 t/s en GPU).
-- **Optimización**: Recomendamos usar modelos cuantizados con `GGUF` para maximizar la velocidad en CPU.
+### Especificaciones del Nodo Ideal (Meta):
+- **CPU**: 8 Cores / 16 Threads.
+- **RAM**: 64GB DDR4.
+- **GPU**: NVIDIA RTX 3060 12GB+ (con `PCIe Passthrough`).
 
-## Configuración Especial:
-- **LXC containers**: Para n8n, Redis y base de datos de logs.
-- **VMs (Ubuntu Server)**: Dedicadas exclusivamente a Ollama / vLLM con GPU asignada.
+## Nodos de la Comunidad (Colaboración)
+Al no contar con un servidor dedicado propio, DSR Labs apuesta por una **infraestructura distribuida**.
+> [!IMPORTANT]
+> **Buscamos Colaboradores**: Si tienes hardware excedente o un servidor con Proxmox que quieras poner a disposición del proyecto para pruebas de orquestación, únete a nuestra comunidad. El avance de DSR Labs depende de la colaboración colectiva.
 
-Este diseño permite que los servicios de automatización no compitan por recursos con la inferencia pesada.
+Este diseño permite que los servicios de automatización se desarrollen de forma agnóstica al hardware, listos para ser desplegados en cualquier nodo voluntario.
