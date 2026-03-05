@@ -9,5 +9,4 @@ Documentación y configuración del hardware y sistemas de virtualización.
 
 - [Cluster Proxmox (v0)](INFRA_V0_PROXMOX.md) — Cómo configuramos nuestro laboratorio.
 - [Script: GPU Checker (Linux/Proxmox)](check_gpu_linux.sh) — Script para verificar hardware en Linux.
-- [Script: GPU Checker (Windows)](check_gpu_windows.ps1) — Script automatizado en PowerShell.
-- [Lanzador Windows (check_gpu.bat)](check_gpu.bat) — Ejecuta el verificador en Windows sin errores de permisos.
+- [Verificador Windows (check_gpu.bat)](check_gpu.bat) — Script autocontenido que verifica hardware en Windows sin errores de permisos.
