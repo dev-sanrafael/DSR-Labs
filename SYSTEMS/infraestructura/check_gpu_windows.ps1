@@ -1,13 +1,17 @@
 # DSR Labs — Windows GPU & Virtualization Checker
 # Este script verifica si tu PC Windows está lista para IA local y virtualización.
 
+# Fix encoding para acentos en la terminal
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+
 Write-Host "--- DSR Labs: Verificando Virtualización en Windows ---" -ForegroundColor Cyan
 
 # 1. Verificar si Hyper-V o Virtualización está habilitada
 $sysInfo = Get-ComputerInfo -Property "HyperV*"
 if ($sysInfo.HyperVRequirementVirtualizationFirmwareEnabled -eq $true) {
     Write-Host "[OK] Virtualización habilitada en BIOS/UEFI." -ForegroundColor Green
-} else {
+}
+else {
     Write-Host "[ERROR] Virtualización deshabilitada. Revisa tu BIOS (VT-x o AMD-V)." -ForegroundColor Red
 }
 
@@ -19,7 +23,8 @@ Get-CimInstance Win32_VideoController | Select-Object Name, AdapterRAM, DriverVe
     Write-Host "Driver: $($_.DriverVersion)"
     if ($_.Name -like "*NVIDIA*") {
         Write-Host "[OK] GPU NVIDIA detectada. Lista para CUDA/Ollama." -ForegroundColor Green
-    } elseif ($_.Name -like "*AMD*") {
+    }
+    elseif ($_.Name -like "*AMD*") {
         Write-Host "[INFO] GPU AMD detectada. Usa ROCm/DirectML." -ForegroundColor Yellow
     }
 }
@@ -28,7 +33,8 @@ Write-Host "`n--- Verificando Soporte IOMMU (para Passthrough) ---" -ForegroundC
 $iommu = Get-PnpDevice | Where-Object { $_.FriendlyName -like "*IOMMU*" -or $_.FriendlyName -like "*DMA*" }
 if ($iommu) {
     Write-Host "[OK] Soporte IOMMU/DMA detectado." -ForegroundColor Green
-} else {
+}
+else {
     Write-Host "[WARNING] No se detectó IOMMU explícito. Esto es normal en muchas PCs de escritorio a menos que se use Proxmox/WSL2 avanzado." -ForegroundColor Yellow
 }
 
