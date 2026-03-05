@@ -1,6 +1,13 @@
 # DSR Labs — Windows GPU & Virtualization Checker
 # Este script verifica si tu PC Windows está lista para IA local y virtualización.
 
+# Intentar desbloquearse a sí mismo y establecer política para ejecuciones futuras
+try {
+    Unblock-File $PSCommandPath -ErrorAction SilentlyContinue
+    Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force -ErrorAction SilentlyContinue
+}
+catch {}
+
 # Fix encoding para acentos en la terminal
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
